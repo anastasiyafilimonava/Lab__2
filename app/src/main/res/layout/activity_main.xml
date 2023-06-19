@@ -25,6 +25,13 @@
             android:hint="@string/input_placeholder"
             android:inputType="none" />
 
+        <TextView
+            android:id="@+id/lastInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:textSize="20sp" />
+
         <Space
             android:layout_width="match_parent"
             android:layout_height="52dp"

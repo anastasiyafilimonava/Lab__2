@@ -10,8 +10,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
+    /*
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -25,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             {
                 Bundle arguments = result.getData().getExtras();
                 String value = arguments.get("answerData").toString();
-                EditText text = (EditText) findViewById(R.id.FirstInfo);
+                TextView text = (TextView) findViewById(R.id.lastInfo);
                 text.setText(value);
             }
         });
@@ -40,8 +43,9 @@ public class MainActivity extends AppCompatActivity {
             MainActivityResultExec.launch(intent);
         });
     }
-    /*
-    // через уставреший метод startActivityForResult
+    */
+
+    // через устаревший метод startActivityForResult
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -66,10 +70,10 @@ public class MainActivity extends AppCompatActivity {
                 Bundle arguments = data.getExtras();
                 String result = data.getStringExtra("answerData");
                 String value = arguments.get("answerData").toString();
-                EditText text = (EditText) findViewById(R.id.FirstInfo);
+                TextView text = (TextView) findViewById(R.id.lastInfo);
                 text.setText(value);
             }
         }
     }
-    */
+
 }
